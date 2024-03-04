@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+  .spotify-logo svg {
+    width: 100px;
+    height: auto;
+  }
+}

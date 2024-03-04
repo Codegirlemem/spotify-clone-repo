@@ -1,6 +1,7 @@
 import "./LandingPageHeader.css";
 
 export default function HeaderNav() {
+  console.log(HeaderNav);
   return (
     <nav>
       <ul className="menu">

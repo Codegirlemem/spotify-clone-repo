@@ -1,15 +1,18 @@
 // import { Component } from "react";
 
 import React from "react";
-import "./LandingPageHeader.css";
-import Logo from "./Logo.jsx";
+// import "./LandingPageHeader.css";
+import Logo from "./UI/Logo.jsx";
 import Navigation from "./HeaderNav.jsx";
+// import Main from "./LandingPageMain.jsx";
 
 export function LandingPageHeader() {
   return (
     <header className="header">
-      <Logo blackBackground={true} />
-      <Navigation />
+      <div className="header-div">
+        <Logo blackBackground={true} />
+        <Navigation />
+      </div>
     </header>
   );
 }

@@ -1,11 +1,14 @@
 .header {
+  padding: var(--app-padding-b) var(--app-padding-a);
   width: 100%;
-  height: 30px;
   background-color: black;
+}
+
+.header-div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px var(--app-padding-a);
+  padding: 0 20px;
 }
 
 .menu {
@@ -37,8 +40,34 @@
   color: D9DADC;
 }
 
-@media (max-width: 700px) {
+/* MEDIA QUERY */
+@media (max-width: 1200px) {
   :root {
-    --app-padding-a: 30px;
+    --app-padding-a: 100px;
+  }
+  .menu {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --app-padding-a: 70px;
+  }
+
+  .menu li a:link,
+  .menu li a:visited {
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --app-padding-a: 40px;
+    --app-padding-b: 35px;
+  }
+
+  .menu {
+    gap: 10px;
   }
 }
