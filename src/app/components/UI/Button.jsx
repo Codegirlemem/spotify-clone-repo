@@ -1,14 +1,14 @@
-import "./Button.css";
+import style from "./Button.module.css";
 
-export default function Button(props) {
-  const style = {
-    backgroundColor: props.bgColor,
-    border: props.border,
-  };
-  console.log(style.backgroundColor);
+export default function Button({ bgColor, color, children }) {
   return (
     <>
-      <button style={style}>{props.children}</button>
+      <button
+        style={{ backgroundColor: bgColor, borderColor: color }}
+        className={style.button}
+      >
+        {children}
+      </button>
     </>
   );
 }

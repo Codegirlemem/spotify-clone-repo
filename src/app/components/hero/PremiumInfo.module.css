@@ -13,7 +13,7 @@
   /* padding: var(-0.6000000238418579px); */
 }
 
-h1 {
+.main h1 {
   font-size: 2.45rem;
   font-weight: 700;
   line-height: 3rem;
@@ -22,7 +22,7 @@ h1 {
   /* text-align: center; */
 }
 
-p.premium-price {
+p.premiumPrice {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 36px;
@@ -42,19 +42,19 @@ p.premium-price {
   text-decoration: underline;
 }
 
-.premium-info-btns {
+.premiumInfoBtns {
   display: flex;
   gap: 8px;
   justify-content: center;
 }
 
 /* Section premium benefits */
-.premium-benefits {
+.premiumBenefits {
   padding: 84px var(--app-padding-a);
   color: black;
 }
 
-.premium-benefits h2 {
+.premiumBenefits h2 {
   font-size: 39px;
   font-weight: 700;
   line-height: 46px;
@@ -73,24 +73,50 @@ p.premium-price {
 
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
-  h1 {
+  .main h1 {
     font-size: 2.2rem;
   }
 
-  p.premium-price {
+  p.premiumPrice {
     font-size: 1.3rem;
   }
 }
 @media (max-width: 900px) {
-  h1 {
+  .main h1 {
     font-size: 2rem;
   }
 
-  p.premium-price {
+  p.premiumPrice {
     font-size: 1rem;
   }
 
   .terms {
     font-size: 0.53rem;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    padding: 50px var(--app-padding-a);
+    gap: 20px;
+  }
+  .main h1 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  p.premiumPrice {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .terms {
+    font-size: 0.53rem;
+  }
+
+  .premiumInfoBtns {
+    flex-direction: column;
+    gap: 20px;
+    /* gap: 8px;
+    justify-content: center; */
   }
 }

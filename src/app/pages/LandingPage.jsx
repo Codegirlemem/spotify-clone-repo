@@ -1,6 +1,7 @@
-import { LandingPageHeader } from "../components/LandingPageHeader";
+import { LandingPageHeader } from "../components/header/LandingPageHeader";
+import PremiumFeatures from "../components/features/PremiumFeatures";
 
-import LandingPageMain from "../components/LandingPageMain";
+import PremiumInfo from "../components/hero/PremiumInfo";
 
 import "./LandingPage.css";
 
@@ -8,7 +9,8 @@ export default function LandingPage() {
   return (
     <div>
       <LandingPageHeader />
-      <LandingPageMain />
+      <PremiumInfo />
+      <PremiumFeatures />
     </div>
   );
 }

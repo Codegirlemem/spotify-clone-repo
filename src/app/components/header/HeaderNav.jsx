@@ -1,10 +1,9 @@
-import "./LandingPageHeader.css";
+import style from "./LandingPageHeader.module.css";
 
 export default function HeaderNav() {
-  console.log(HeaderNav);
   return (
-    <nav>
-      <ul className="menu">
+    <nav className={style.navigation}>
+      <ul className={style.navList}>
         <li>
           <a href="#/dashboard">Premium</a>
         </li>
@@ -14,7 +13,7 @@ export default function HeaderNav() {
         <li>
           <a href="#/dashboard">Download</a>
         </li>
-        <li>
+        <li className={style.line}>
           <a href="#/dashboard">|</a>
         </li>
         <li className="active">
